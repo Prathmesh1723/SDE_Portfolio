@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import "./header.css";
 import CV from "../../assets/CPP_Resume.pdf";
-import { HiOutlineHome, HiOutlineUser, HiOutlineBadgeCheck, HiOutlineClipboardList, HiOutlinePhotograph, HiOutlineMail, HiX, HiOutlineMenu } from "react-icons/hi";
+import { HiOutlineHome, HiOutlineUser, HiOutlineBadgeCheck, HiOutlineClipboardList, HiOutlinePhotograph, HiOutlineMail } from "react-icons/hi";
 
 const Header = () => {
     window.addEventListener("scroll", function () {
