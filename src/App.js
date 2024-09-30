@@ -16,7 +16,7 @@ ReactGA.initialize(TRACKING_ID);
 
 function App() {
   useEffect(() => {
-    ReactGA.pageview(window.location.pathname + window.location.search);
+    ReactGA.send({ hitType: "pageview", page: window.location.pathname + window.location.search, title: "Home Page" });
   }, []);
 
   return (
