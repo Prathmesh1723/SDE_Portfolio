@@ -11,7 +11,7 @@ import ScrollUp from './components/scrollup/ScrollUp';
 import Projects from './components/projects/Projects';
 import ReactGA from 'react-ga4'
 
-const TRACKING_ID = "G-TWDLX47CLE";
+const TRACKING_ID = "G-S6B89PR3NG";
 ReactGA.initialize(TRACKING_ID);
 
 function App() {
