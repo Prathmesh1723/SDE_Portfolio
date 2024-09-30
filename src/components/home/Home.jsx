@@ -9,7 +9,10 @@ import { useEffect } from 'react';
 
 const Home = () => {
   useEffect(() => {
-    ReactGA.send({ hitType: "pageview", page: window.location.pathname + window.location.search, title: "Home Page" });
+    ReactGA.send({ 
+      hitType: "pageview", 
+      page: window.location.pathname + window.location.search, 
+      title: "Home Page" });
   }, []);
   return (
     <section className="home section" id="home">

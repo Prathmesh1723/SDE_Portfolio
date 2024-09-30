@@ -11,12 +11,16 @@ import ScrollUp from './components/scrollup/ScrollUp';
 import Projects from './components/projects/Projects';
 import ReactGA from 'react-ga4'
 
-const TRACKING_ID = "G-S6B89PR3NG";
-ReactGA.initialize(TRACKING_ID);
 
 function App() {
+  const TRACKING_ID = "G-TWDLX47CLE";
+  ReactGA.initialize(TRACKING_ID);
+
   useEffect(() => {
-    ReactGA.send({ hitType: "pageview", page: window.location.pathname + window.location.search, title: "Home Page" });
+    ReactGA.send({ 
+      hitType: "pageview", 
+      page: window.location.pathname + window.location.search, 
+      title: "Home Page" });
   }, []);
 
   return (
