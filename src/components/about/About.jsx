@@ -3,7 +3,7 @@ import "./about.css";
 import AboutImg from "../../assets/about.jpg";
 import CV from "../../assets/CPP_Resume.pdf";
 import Info from "./Info";
-import ReactGA from "react-ga";
+import ReactGA from "react-ga4";
 
 const About = () => {
     const handleDownloadCV = () => {

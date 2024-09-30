@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import "./header.css";
 import CV from "../../assets/CPP_Resume.pdf";
 import { HiOutlineHome, HiOutlineUser, HiOutlineBadgeCheck, HiOutlineClipboardList, HiOutlinePhotograph, HiOutlineMail } from "react-icons/hi";
-import ReactGA from "react-ga";
+import ReactGA from "react-ga4";
 
 const Header = () => {
     window.addEventListener("scroll", function () {
