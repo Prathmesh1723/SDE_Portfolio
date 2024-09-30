@@ -4,6 +4,7 @@ import Social from "./Social";
 import Data from "./Data";
 import Scroll from "./Scroll";
 import ReactGA from 'react-ga4'
+import { useEffect } from 'react';
 
 
 const Home = () => {
