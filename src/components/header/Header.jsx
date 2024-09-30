@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import "./header.css";
 import CV from "../../assets/CPP_Resume.pdf";
 import { HiOutlineHome, HiOutlineUser, HiOutlineBadgeCheck, HiOutlineClipboardList, HiOutlinePhotograph, HiOutlineMail } from "react-icons/hi";
+import ReactGA from "react-ga";
 
 const Header = () => {
     window.addEventListener("scroll", function () {
@@ -13,7 +14,15 @@ const Header = () => {
     const[Toggle, showMenu] = useState(false);
     const[activeNav, setActiveNav] = useState("#home");
 
-  return (
+    const handleResumeClick = () => {
+        ReactGA.event({
+            category: 'Navigation',
+            action: 'Clicked Resume',
+            label: 'Resume Menu Item Clicked'
+        });
+    };
+    
+    return (
     <header className='header'>
         <nav className="nav container">
             <a href="index.html" className="nav__logo">Prathmesh</a>
@@ -45,7 +54,7 @@ const Header = () => {
                             </a>
                         </li>
                         <li className="nav__item">
-                            <a href={CV} onClick={() => setActiveNav("#resume")} 
+                            <a href={CV} onClick={() => {setActiveNav("#resume"); handleResumeClick();} }
                             className={activeNav === "#resume" ? "nav__link active-link" : "nav__link"}>
                                 <HiOutlineClipboardList className="nav__icon"/>Resume
                             </a>

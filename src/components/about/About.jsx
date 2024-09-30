@@ -3,9 +3,18 @@ import "./about.css";
 import AboutImg from "../../assets/about.jpg";
 import CV from "../../assets/CPP_Resume.pdf";
 import Info from "./Info";
+import ReactGA from "react-ga";
 
 const About = () => {
-  return (
+    const handleDownloadCV = () => {
+        ReactGA.event({
+          category: 'User',
+          action: 'Downloaded CV',
+          label: 'CV Download Button Clicked'
+        });
+      };
+    
+    return (
     <section className="about section" id="about">
         <h2 className="section__title">About Me</h2>
         <span className="section__subtitle">A short introduction</span>
@@ -16,7 +25,7 @@ const About = () => {
                 <p className="about__description">
                     I create applications highlighting minimal design and friendly UI/UX interfaces.
                 </p>
-                <a download="" href={CV} className="button button--flex">
+                <a download="" href={CV} className="button button--flex" onClick={handleDownloadCV}>
                     Download CV
                     <svg
                         class="button__icon"

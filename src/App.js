@@ -8,6 +8,10 @@ import Contact from './components/contact/contact';
 import Footer from './components/footer/footer';
 import ScrollUp from './components/scrollup/ScrollUp';
 import Projects from './components/projects/Projects';
+import ReactGA from "react-ga";
+
+const TRACKING_ID = "G-TWDLX47CLE";
+ReactGA.initialize(TRACKING_ID);
 
 function App() {
   return (
