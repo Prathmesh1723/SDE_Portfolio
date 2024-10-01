@@ -30,6 +30,12 @@
     row-gap: 1rem;
 }
 
+.skills__group1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns of equal width */
+    grid-gap: 1.5rem; /* space between rows and columns */
+}
+
 .skills__data {
     display: flex;
     column-gap: 0.5rem;
@@ -49,6 +55,39 @@
 .skills__level {
     font-size: var(--smaller-font-size);
 }
+
+.skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center-aligns the children */
+}
+
+.skills__title-container {
+    position: relative;
+    text-align: center; /* Center the title text */
+}
+
+.skills__tooltip {
+    position: absolute;
+    top: calc(50% - 1rem); /* Center vertically relative to the title */
+    right: 100%; /* Position it to the left of the title */
+    transform: translateY(-50%); /* Adjust to center it vertically */
+    background-color: rgba(0, 0, 0, 0.75);
+    color: #fff;
+    padding: 0.5rem;
+    border-radius: 5px;
+    white-space: nowrap;
+    font-size: var(--smaller-font-size);
+    margin-right: 1rem; /* Space between the tooltip and the title */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.skills__title-container:hover .skills__tooltip {
+    opacity: 1;
+}
+
 
 /* BREAK POINTS */
 @media screen and (max-width: 992px) {
