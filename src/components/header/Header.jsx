@@ -15,12 +15,13 @@ const Header = () => {
     const[activeNav, setActiveNav] = useState("#home");
 
     const handleResumeClick = () => {
+        // Track button click event
         ReactGA.event({
-            category: 'Navigation',
-            action: 'Clicked Resume',
-            label: 'Resume Menu Item Clicked'
+          category: "User Interaction",
+          action: "Clicked Button",
+          label: "Button Label", // Optional
         });
-    };
+      };
     
     return (
     <header className='header'>

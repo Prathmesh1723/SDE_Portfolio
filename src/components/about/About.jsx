@@ -1,4 +1,4 @@
-import React from 'react';
+import {React, useEffect} from 'react';
 import "./about.css";
 import AboutImg from "../../assets/about.jpg";
 import CV from "../../assets/CPP_Resume.pdf";
@@ -13,6 +13,13 @@ const About = () => {
           label: 'CV Download Button Clicked'
         });
       };
+
+      useEffect(() => {
+        ReactGA.send({ 
+          hitType: "pageview", 
+          page: window.location.pathname + window.location.search, 
+          title: "About" });
+      }, []);
     
     return (
     <section className="about section" id="about">

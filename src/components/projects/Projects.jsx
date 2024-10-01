@@ -1,8 +1,17 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './projects.css';
 import { HiOutlineClipboardList, HiOutlineArrowSmRight, HiOutlineCheckCircle, HiX } from 'react-icons/hi';
+import ReactGA from "react-ga4";
 
 const Projects = () => {
+
+    useEffect(() => {
+        ReactGA.send({ 
+          hitType: "pageview", 
+          page: window.location.pathname + window.location.search, 
+          title: "About" });
+      }, []);
+
     const [toggleState, setToggleState] = useState(0);
 
     const toggleTab = (index) => {
