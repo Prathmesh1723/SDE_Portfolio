@@ -70,7 +70,7 @@ const Projects = () => {
                             </li>
                             <br/>
                             <span className="services__button" onClick= {() => toggleTab(1)}>
-                                <a href="https://github.com/CSYE6225-Netwrk-Strctres-Cloud-Computng/webapp" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', textDecoration: 'none' }}>
+                                <a href="https://github.com/Prathmesh1723/webapp-forked" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', textDecoration: 'none' }}>
                                     View More
                                 <HiOutlineArrowSmRight className="services__button-icon" />
                                 </a>
