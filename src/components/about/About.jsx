@@ -30,7 +30,7 @@ const About = () => {
             <div className="about__data">
                 <Info />
                 <p className="about__description">
-                    I build everything from the visuals you see on a website or app to the behind-the-scenes systems that make it all work smoothly. I love crafting solutions that look great and perform even better.
+                    I like to build everything from the visuals you see on a website or app to the behind-the-scenes systems that make it all work smoothly.
                 </p>
                 <a download="" href={CV} className="button button--flex" onClick={handleDownloadCV}>
                     Download CV
