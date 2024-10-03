@@ -19,7 +19,7 @@ const Skills = () => {
           <h2 className="section__title">Skills</h2>
           {isHovered && <div className="skills__tooltip">My hidden skills are Sketching, Painting and Hikking</div>}
         </div>
-        <span className="section__subtitle">Some things I am good at</span>
+        <span className="section__subtitle">Things I am good at</span>
         <div className="skills__container container grid">
             <Frontend />
             <Backend /> 

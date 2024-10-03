@@ -158,13 +158,13 @@ const Projects = () => {
                             <li className="services__modal-service">
                                 <HiOutlineCheckCircle className="services__modal-icon" />
                                 <p className="services__modal-info">
-                                    Used stored procedures, functions & triggers automating queries
+                                    Used stored Procedures, Functions & Triggers
                                 </p>
                             </li>
                             <li className="services__modal-service">
                                 <HiOutlineCheckCircle className="services__modal-icon" />
                                 <p className="services__modal-info">
-                                    Restricted access through database roles, users to protect tenant data
+                                    Restricted access through database roles to protect tenant data
                                 </p>
                             </li>
                             <li className="services__modal-service">
@@ -307,7 +307,7 @@ const Projects = () => {
                             <li className="services__modal-service">
                                 <HiOutlineCheckCircle className="services__modal-icon" />
                                 <p className="services__modal-info">
-                                    Developed MERN stack web application for house rentals/sales
+                                    Developed MERN stack web application for house rentals
                                 </p>
                             </li>
                             <li className="services__modal-service">
@@ -331,7 +331,7 @@ const Projects = () => {
                             <li className="services__modal-service">
                                 <HiOutlineCheckCircle className="services__modal-icon" />
                                 <p className="services__modal-info">
-                                    Utilized Node.js Express Architecture, CORS for authentication
+                                    Utilized Node Express Architecture, CORS for authentication
                                 </p>
                             </li>
                             <br/>
@@ -346,7 +346,6 @@ const Projects = () => {
                 </div>
             </div>
         </div>
-        
     </section>
   );
 }

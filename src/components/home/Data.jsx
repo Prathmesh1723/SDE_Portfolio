@@ -59,6 +59,9 @@ const Data = () => {
         </h3>
         <p className="home__description">
             I am a Software Engineer who loves turning ideas into creative and functional code.
+            <br/>
+            <br/>
+            P.S. I actually read the terms & conditions.
         </p>
 
         <a href="#contact" className="button button--flex">
